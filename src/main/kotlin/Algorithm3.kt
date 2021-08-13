@@ -4,6 +4,9 @@ object GroupAnagram {
     // where order doesn't matter. For example, "cinema" and "iceman" are anagrams;
     // similarly, "foo" and "ofo" are anagrams. Note that the groups of anagrams don't
     // need to be ordered in any particular way.
+            /* Space and Time Complexity Analysis*/
+    // O(w * n * log(n)) time | O(wn) space - where w is the number of words and
+    //# n is the length of the longest word
     fun groupAnagram(words: Array<String>): List<List<String>> {
          var hashMap = hashMapOf<String, MutableList<String>>()
 
